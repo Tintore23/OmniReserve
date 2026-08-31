@@ -1,0 +1,16 @@
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\bin\Debug\net10.0\OmniReserve.Application.deps.json
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\bin\Debug\net10.0\OmniReserve.Application.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\bin\Debug\net10.0\OmniReserve.Application.pdb
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\bin\Debug\net10.0\OmniReserve.Domain.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\bin\Debug\net10.0\OmniReserve.Domain.pdb
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.csproj.AssemblyReference.cache
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.AssemblyInfoInputs.cache
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.AssemblyInfo.cs
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.csproj.CoreCompileInputs.cache
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.sourcelink.json
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\obj\Debug\net10.0\OmniRese.A27A30A3.Up2Date
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\obj\Debug\net10.0\refint\OmniReserve.Application.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\obj\Debug\net10.0\OmniReserve.Application.pdb
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Application\obj\Debug\net10.0\ref\OmniReserve.Application.dll
