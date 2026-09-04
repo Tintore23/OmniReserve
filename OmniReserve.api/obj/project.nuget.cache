@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LQ1aA+T4CWM=",
+  "dgSpecHash": "zFpNRbOojoo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ferti\\Documents\\Aplicaciones de BD\\OmniReserve\\OmniReserve.api\\OmniReserve.api.csproj",
+  "projectFilePath": "C:\\Users\\ferti\\Documents\\Aplicaciones de BD\\OmniReserve\\OmniReserve.Api\\OmniReserve.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ferti\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
     "C:\\Users\\ferti\\.nuget\\packages\\microsoft.extensions.apidescription.server\\10.0.0\\microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",

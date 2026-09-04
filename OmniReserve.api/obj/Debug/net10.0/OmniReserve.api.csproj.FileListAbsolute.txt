@@ -35,9 +35,9 @@ C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debu
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\OmniRese.50CA45A8.Up2Date
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\OmniReserve.api.dll
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\refint\OmniReserve.api.dll
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\OmniReserve.api.pdb
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\OmniReserve.api.genruntimeconfig.cache
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\ref\OmniReserve.api.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\obj\Debug\net10.0\OmniRese.50CA45A8.Up2Date

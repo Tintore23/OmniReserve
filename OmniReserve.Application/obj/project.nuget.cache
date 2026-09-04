@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AgZua127qHQ=",
+  "dgSpecHash": "8tqyExZ/7mM=",
   "success": true,
   "projectFilePath": "C:\\Users\\ferti\\Documents\\Aplicaciones de BD\\OmniReserve\\OmniReserve.Application\\OmniReserve.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ferti\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.11\\microsoft.extensions.dependencyinjection.abstractions.10.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
