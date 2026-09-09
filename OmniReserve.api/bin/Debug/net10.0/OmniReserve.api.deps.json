@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "10.0.3",
           "OmniReserve.Application": "1.0.0",
+          "OmniReserve.Domain": "1.0.0",
           "OmniReserve.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "10.2.3"
         },
