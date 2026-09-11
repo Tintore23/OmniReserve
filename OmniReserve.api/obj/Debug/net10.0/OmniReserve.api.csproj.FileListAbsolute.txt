@@ -40,4 +40,10 @@ C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debu
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\OmniReserve.api.pdb
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\OmniReserve.api.genruntimeconfig.cache
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\ref\OmniReserve.api.dll
-C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\obj\Debug\net10.0\OmniRese.50CA45A8.Up2Date
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\MediatR.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\MediatR.Contracts.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\obj\Debug\net10.0\OmniRese.50C9C588.Up2Date
