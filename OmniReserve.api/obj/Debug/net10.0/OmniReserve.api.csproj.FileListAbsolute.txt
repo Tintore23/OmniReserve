@@ -47,3 +47,5 @@ C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debu
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\obj\Debug\net10.0\OmniRese.50C9C588.Up2Date
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\FluentValidation.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
