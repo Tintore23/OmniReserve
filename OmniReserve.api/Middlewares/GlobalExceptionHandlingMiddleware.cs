@@ -2,6 +2,7 @@ using System.Net;
 using System.Text.Json;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using OmniReserve.Domain.Exceptions; // Asegúrate de ajustar el namespace según la ubicación de DomainException
 
 namespace OmniReserve.Api.Middlewares;
 
@@ -37,7 +38,6 @@ public class GlobalExceptionHandlingMiddleware
         {
             context.Response.StatusCode = StatusCodes.Status400BadRequest;
 
-            
             var errors = validationEx.Errors
                 .GroupBy(e => e.PropertyName)
                 .ToDictionary(
@@ -57,6 +57,22 @@ public class GlobalExceptionHandlingMiddleware
 
             var jsonValidation = JsonSerializer.Serialize(validationProblemDetails);
             return context.Response.WriteAsync(jsonValidation);
+        }
+
+        if (exception is DomainException domainEx)
+        {
+            context.Response.StatusCode = StatusCodes.Status400BadRequest;
+
+            var domainProblemDetails = new ProblemDetails
+            {
+                Status = StatusCodes.Status400BadRequest,
+                Type = "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+                Title = "Error de Dominio",
+                Detail = domainEx.Message
+            };
+
+            var jsonDomain = JsonSerializer.Serialize(domainProblemDetails);
+            return context.Response.WriteAsync(jsonDomain);
         }
 
         context.Response.StatusCode = StatusCodes.Status500InternalServerError;
