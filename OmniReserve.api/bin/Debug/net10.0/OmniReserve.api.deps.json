@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v10.0": {
-      "OmniReserve.Api/1.0.0": {
+      "OmniReserve.api/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "10.0.3",
           "OmniReserve.Application": "1.0.0",
@@ -15,7 +15,7 @@
           "Swashbuckle.AspNetCore": "10.2.3"
         },
         "runtime": {
-          "OmniReserve.Api.dll": {}
+          "OmniReserve.api.dll": {}
         }
       },
       "FluentValidation/12.1.1": {
@@ -190,7 +190,7 @@
     }
   },
   "libraries": {
-    "OmniReserve.Api/1.0.0": {
+    "OmniReserve.api/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
