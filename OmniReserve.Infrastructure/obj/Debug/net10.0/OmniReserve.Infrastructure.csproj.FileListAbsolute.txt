@@ -14,3 +14,5 @@ C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Infrastructu
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Infrastructure\obj\Debug\net10.0\refint\OmniReserve.Infrastructure.dll
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Infrastructure\obj\Debug\net10.0\OmniReserve.Infrastructure.pdb
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Infrastructure\obj\Debug\net10.0\ref\OmniReserve.Infrastructure.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Infrastructure\bin\Debug\net10.0\OmniReserve.Application.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Infrastructure\bin\Debug\net10.0\OmniReserve.Application.pdb
