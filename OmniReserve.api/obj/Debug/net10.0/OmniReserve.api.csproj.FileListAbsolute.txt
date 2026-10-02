@@ -178,4 +178,4 @@ C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debu
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.api\obj\Debug\net10.0\OmniRese.50CA45A8.Up2Date
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\obj\Debug\net10.0\OmniRese.50C9C588.Up2Date
