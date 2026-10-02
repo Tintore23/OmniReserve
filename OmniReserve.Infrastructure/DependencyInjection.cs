@@ -1,6 +1,9 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+
 using OmniReserve.Application.Common.Interfaces;
+using OmniReserve.Infrastructure.Persistence;
 using OmniReserve.Infrastructure.Persistence.Repositories;
 
 namespace OmniReserve.Infrastructure;
@@ -11,6 +14,12 @@ public static class DependencyInjection
         this IServiceCollection services,
         IConfiguration configuration)
     {
+        services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseNpgsql(
+                configuration.GetConnectionString("OmniReserveDb")
+            )
+        );
+
         services.AddScoped<IRoomRepository, RoomRepository>();
 
         return services;
