@@ -1,3 +1,4 @@
+using OmniReserve.Domain.Entities;
 public class User
 {
     public enum Role
@@ -12,6 +13,7 @@ public class User
     public string Email { get; private set; }
     public string Password { get; private set; }
     public Role UserRole { get; private set; }
+    public ICollection<Reservation> Reservations { get; private set; } = new List<Reservation>();
 
     public User(string firstName, string lastName, string email, string password, Role userRole)
     {
