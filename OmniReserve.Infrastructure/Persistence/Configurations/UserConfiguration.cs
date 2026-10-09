@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using OmniReserve.Domain.Entities;
+using OmniReserve.Domain.ValueObjects;
+
 namespace OmniReserve.Infrastructure.Persistence.Configurations;
 
 public class UserConfiguration : IEntityTypeConfiguration<User>
@@ -19,9 +21,19 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .IsRequired()
             .HasMaxLength(75);
 
+        // Conversión del Value Object EmailAddress <-> string SQL
         builder.Property(u => u.Email)
-            .IsRequired()
-            .HasMaxLength(100);
+            .HasConversion(
+                emailObj => emailObj.Value,              // C# a SQL (guarda la propiedad Value)
+                emailStr => new EmailAddress(emailStr)  // SQL a C# (reconstruye el Value Object)
+            )
+            .HasColumnName("Email")
+            .HasMaxLength(255)
+            .IsRequired();
+
+        // Índice único para garantizar que no existan correos duplicados
+        builder.HasIndex(u => u.Email)
+            .IsUnique();
 
         builder.Property(u => u.Password)
             .IsRequired();
