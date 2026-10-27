@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VxvJvxQuwFA=",
+  "dgSpecHash": "N0fY2MJYScA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ferti\\Documents\\Aplicaciones de BD\\OmniReserve\\OmniReserve.Api\\OmniReserve.api.csproj",
+  "projectFilePath": "C:\\Users\\ferti\\Documents\\Aplicaciones de BD\\OmniReserve\\OmniReserve.Api\\OmniReserve.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ferti\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\ferti\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
