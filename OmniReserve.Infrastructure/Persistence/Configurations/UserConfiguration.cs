@@ -21,17 +21,15 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .IsRequired()
             .HasMaxLength(75);
 
-        // Conversión del Value Object EmailAddress <-> string SQL
         builder.Property(u => u.Email)
             .HasConversion(
-                emailObj => emailObj.Value,              // C# a SQL (guarda la propiedad Value)
-                emailStr => new EmailAddress(emailStr)  // SQL a C# (reconstruye el Value Object)
+                emailObj => emailObj.Value,             
+                emailStr => new EmailAddress(emailStr)  
             )
             .HasColumnName("Email")
             .HasMaxLength(255)
             .IsRequired();
 
-        // Índice único para garantizar que no existan correos duplicados
         builder.HasIndex(u => u.Email)
             .IsUnique();
 
