@@ -26,4 +26,9 @@ public class ReservationRepository : IReservationRepository
         return !await _context.Reservations
             .AnyAsync(r => r.RoomId == roomId && r.CheckInDate < end && r.CheckOutDate > start);
     }
+
+    public async Task AddAsync(Reservation reservation)
+{
+    await _context.Reservations.AddAsync(reservation);
+}
 }
