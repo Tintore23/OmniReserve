@@ -20,9 +20,11 @@ public static class DependencyInjection
             )
         );
 
+        services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
         services.AddScoped<IRoomRepository, RoomRepository>();
         services.AddScoped<IReservationRepository, ReservationRepository>();
         services.AddScoped<IPasswordHasher, BCryptPasswordHasher>();
+        //Sin fix que resuelva mis erroes arriba :()
 
         return services;
     }
