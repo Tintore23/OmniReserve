@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using OmniReserve.Infrastructure.Security;
 using OmniReserve.Application.Common.Interfaces;
+
 using OmniReserve.Infrastructure.Persistence;
 using OmniReserve.Infrastructure.Persistence.Repositories;
 
@@ -30,6 +31,7 @@ public static class DependencyInjection
         services.AddScoped<IReservationRepository, ReservationRepository>();
         services.AddScoped<IPasswordHasher, BCryptPasswordHasher>();
         services.AddScoped<IJwtProvider, JwtProvider>(); // <-- ¡Agregado el proveedor de JWT!
+        services.AddScoped<IUserRepository, UserRepository>();
 
         return services;
     }
