@@ -26,4 +26,6 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
         modelBuilder.ApplyConfigurationsFromAssembly(
             Assembly.GetExecutingAssembly());
     }
+    //Creamos un IApplicationDbContext para poder hacer pruebas unitarias y mockear la base de datos, ya que DbContext no es una interfaz y no se puede mockear directamente.
+
 }
