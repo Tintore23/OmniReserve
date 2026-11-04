@@ -1,6 +1,9 @@
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using OmniReserve.Infrastructure.Security;
 using OmniReserve.Application.Common.Interfaces;
 
@@ -17,6 +20,31 @@ public static class DependencyInjection
     {
         // 1. Configurar las opciones de JWT desde appsettings.json
         services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
+
+        // --- Configuración de Autenticación JWT Bearer ---
+        var jwtSettings = configuration.GetSection(JwtSettings.SectionName);
+        var secretKey = Encoding.UTF8.GetBytes(jwtSettings["Secret"] 
+            ?? throw new InvalidOperationException("JwtSettings:Secret is not configured."));
+
+        services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+        .AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = jwtSettings["Issuer"],
+                ValidAudience = jwtSettings["Audience"],
+                IssuerSigningKey = new SymmetricSecurityKey(secretKey),
+                ClockSkew = TimeSpan.Zero
+            };
+        });
 
         // 2. Configurar la base de datos PostgreSQL
         services.AddDbContext<ApplicationDbContext>(options =>
