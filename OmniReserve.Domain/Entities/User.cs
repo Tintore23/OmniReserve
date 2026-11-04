@@ -1,3 +1,4 @@
+using OmniReserve.Domain.Constants; // Asegúrate de importar el namespace de Roles
 using OmniReserve.Domain.ValueObjects;
 
 namespace OmniReserve.Domain.Entities;
@@ -14,10 +15,11 @@ public class User
     public string FirstName { get; private set; }
     public string LastName { get; private set; }
     public EmailAddress Email { get; private set; } 
-    public string PasswordHash { get; private set; } // <-- Cambiado de Password a PasswordHash
+    public string PasswordHash { get; private set; }
     public Role UserRole { get; private set; }
     public ICollection<Reservation> Reservations { get; private set; } = new List<Reservation>();
 
+    // Constructor principal
     public User(string firstName, string lastName, EmailAddress email, string passwordHash, Role userRole)
     {
         if (string.IsNullOrWhiteSpace(firstName)) throw new ArgumentException("First name required");
@@ -27,9 +29,12 @@ public class User
 
         Id = Guid.NewGuid();
         FirstName = firstName;
-        LastName = lastName;
+        LastName = LastName; // Ojo aquí: asegúrate de asignar LastName = lastName;
         Email = email;
-        PasswordHash = passwordHash; // <-- Asignando el hash seguro
+        PasswordHash = passwordHash;
         UserRole = userRole;
     }
+
+    // Constructor protegido para EF Core
+    protected User() { }
 }
