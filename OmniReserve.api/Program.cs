@@ -27,7 +27,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// ⚠️ ORDEN CRÍTICO DE MIDDLEWARES
 app.UseAuthentication(); // 1. Lee, inspecciona y valida el JWT Bearer
 app.UseAuthorization();  // 2. Valida los permisos/roles del usuario autenticado
 
