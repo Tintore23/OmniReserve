@@ -28,7 +28,8 @@ public class JwtProvider : IJwtProvider
         {
             new(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
             new(JwtRegisteredClaimNames.Email, user.Email.Value), // Asegúrate de acceder a .Value si Email es un ValueObject
-            new(ClaimTypes.Role, user.UserRole.ToString())
+            new(ClaimTypes.Role, user.UserRole.ToString()),
+            new Claim(ClaimTypes.Role, user.UserRole.ToString())
         };
 
         var tokenDescriptor = new SecurityTokenDescriptor
