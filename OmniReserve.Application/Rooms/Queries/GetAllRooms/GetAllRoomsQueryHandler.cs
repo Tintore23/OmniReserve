@@ -40,7 +40,7 @@ public class GetAllRoomsQueryHandler : IRequestHandler<GetAllRoomsQuery, List<Ro
         var roomDtos = roomsFromDb.Select(r => new RoomResponseDto(
             r.Id,
             r.RoomNumber,
-            r.Type.ToString(), // O r.Type dependiendo de si tu DTO espera un string o el enum RoomType
+            r.Type.ToString(), 
             r.PricePerNight,
             r.IsAvailable
         )).ToList();
@@ -61,3 +61,4 @@ public class GetAllRoomsQueryHandler : IRequestHandler<GetAllRoomsQuery, List<Ro
         return roomDtos;
     }
 }
+//sin fix aun no se que son los dockers
