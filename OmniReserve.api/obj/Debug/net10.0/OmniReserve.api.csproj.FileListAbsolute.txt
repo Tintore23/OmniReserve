@@ -143,4 +143,7 @@ C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\obj\Debu
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\bin\Debug\net10.0\StackExchange.Redis.dll
 C:\Users\ferti\Documents\Aplicaciones de BD\OmniReserve\OmniReserve.Api\obj\Debug\net10.0\OmniRese.50C9C588.Up2Date
