@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using OmniReserve.Application.Common.Interfaces;
 using OmniReserve.Domain.Entities;
+using OmniReserve.Infrastructure.Persistence;
 
 namespace OmniReserve.Infrastructure.Persistence.Repositories;
 
@@ -11,6 +12,11 @@ public class RoomRepository : IRoomRepository
     public RoomRepository(ApplicationDbContext context)
     {
         _context = context;
+    }
+
+    public async Task<List<Room>> GetAllAsync(CancellationToken cancellationToken = default)
+    {
+        return await _context.Rooms.ToListAsync(cancellationToken);
     }
 
     public async Task AddAsync(Room room)

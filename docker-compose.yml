@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: omnireserve-postgres
+    environment:
+      POSTGRES_DB: OmniReserveDb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Tintore.232701
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+  redis:
+    image: redis:alpine
+    container_name: omnireserve-redis
+    ports:
+      - "6379:6379"
+    restart: always
+
+  omnireserve-api:
+    container_name: omnireserve-api
+    build:
+      context: .
+      dockerfile: OmniReserve.api/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__OmniReserveDb=Host=postgres;Port=5432;Database=OmniReserveDb;Username=postgres;Password=Tintore.232701
+      - ConnectionStrings__RedisConnection=redis:6379
+    depends_on:
+      - postgres
+      - redis
+
+volumes:
+  postgres_data:

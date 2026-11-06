@@ -12,10 +12,10 @@ public class User
     }
 
     public Guid Id { get; private set; }
-    public string FirstName { get; private set; }
-    public string LastName { get; private set; }
-    public EmailAddress Email { get; private set; } 
-    public string PasswordHash { get; private set; }
+    public string FirstName { get; private set; } = string.Empty; // Soluciona el warning CS8618
+    public string LastName { get; private set; } = string.Empty;  // Soluciona el warning CS8618
+    public EmailAddress Email { get; private set; } = null!;      // Soluciona el warning CS8618
+    public string PasswordHash { get; private set; } = string.Empty; // Soluciona el warning CS8618
     public Role UserRole { get; private set; }
     public ICollection<Reservation> Reservations { get; private set; } = new List<Reservation>();
 
@@ -29,12 +29,12 @@ public class User
 
         Id = Guid.NewGuid();
         FirstName = firstName;
-        LastName = LastName; // Ojo aquí: asegúrate de asignar LastName = lastName;
+        LastName = lastName; // <-- Corregido: asigna el parámetro en minúscula
         Email = email;
         PasswordHash = passwordHash;
         UserRole = userRole;
     }
 
     // Constructor protegido para EF Core
-    protected User() { }
+    protected User() { } 
 }

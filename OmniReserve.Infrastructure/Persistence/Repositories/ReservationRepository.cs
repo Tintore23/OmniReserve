@@ -28,7 +28,16 @@ public class ReservationRepository : IReservationRepository
     }
 
     public async Task AddAsync(Reservation reservation)
-{
-    await _context.Reservations.AddAsync(reservation);
-}
+    {
+        await _context.Reservations.AddAsync(reservation);
+    }
+
+    // 👈 Método añadido para cumplir con IReservationRepository y permitir el panel de Administrador
+    public async Task<List<Reservation>> GetAllAsync()
+    {
+        return await _context.Reservations
+            .Include(r => r.User)
+            .Include(r => r.Room)
+            .ToListAsync();
+    }
 }
