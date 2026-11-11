@@ -3,7 +3,7 @@ using OmniReserve.Infrastructure;
 using OmniReserve.Domain.Entities;
 using OmniReserve.Domain.Exceptions;
 using Microsoft.Extensions.Caching.StackExchangeRedis;
-using Microsoft.AspNetCore.RateLimiting; // 1. Agrega esta directiva using
+using Microsoft.AspNetCore.RateLimiting; // 1. Directiva using para Rate Limiting
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,17 +18,25 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.InstanceName = "OmniReserve_";
 });
 
-// 3. Configuración del Rate Limiter Global
+// 3. Configuración del Rate Limiter (Políticas Global y de Autenticación)
 builder.Services.AddRateLimiter(options =>
 {
     // Establecer el código de estado HTTP cuando se excede el límite
     options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
 
-    // Cambiar AddFixedWindowPolicy por AddFixedWindowLimiter
+    // Política Global (100 peticiones por minuto)
     options.AddFixedWindowLimiter("GlobalLimit", policyOptions =>
     {
         policyOptions.PermitLimit = 100;
         policyOptions.Window = TimeSpan.FromMinutes(1);
+        policyOptions.QueueLimit = 0;
+    });
+
+    // Política Restrictiva para Login contra Fuerza Bruta (3 peticiones cada 30 segundos)
+    options.AddFixedWindowLimiter("AuthLimit", policyOptions =>
+    {
+        policyOptions.PermitLimit = 3;
+        policyOptions.Window = TimeSpan.FromSeconds(30);
         policyOptions.QueueLimit = 0;
     });
 });
